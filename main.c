@@ -6,6 +6,10 @@
 #include <openssl/buffer.h>
 #include <stdint.h>
 
+/**
+ * The MIT License (MIT)
+ * Copyright (c) 2013 Barry Steyn
+ */
 int Base64Encode(const unsigned char* buffer, size_t length, char** b64text) { //Encodes a binary safe base 64 string
 	BIO *bio, *b64;
 	BUF_MEM *bufferPtr;
